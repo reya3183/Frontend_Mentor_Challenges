@@ -30,9 +30,7 @@ header img{
     grid-area: leftDiv;
     padding-right: 40px;
 }
-.leftDiv img{
-    width:665px;
-}
+
 .rightDiv{
     grid-area: rightDiv;
     margin-top: 50px;
@@ -57,23 +55,87 @@ button{
     border: none;
     color: blueviolet;
     cursor:pointer;
+    box-shadow:3px 3px 8px 2px #593C91;
 }
 button:hover,button:active{
     background-color: hsl(300, 69%, 71%);
     color:white;
 }
+ul{
+    display: flex;
+    justify-content: flex-end;
+}
+ul>li{
+    list-style:none;
+    margin-right: 15px;
+}
+i.fab {
+    padding: 6px 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+    color:white;
+  }
+ion-icon{
+    color:white;
+    padding: 6px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+a{
+    cursor: pointer;
+}
+i.fab:hover,ion-icon:hover{
+    color: hsl(300, 69%, 71%);
+    border: 1px solid hsl(300, 69%, 71%);    
+}
 footer{
     text-align:center;
 }
-@media only screen and (min-width: 376px) {
+/* desktop view */
+@media only screen and (min-width: 1200px) {
     .grid-component {
       display: grid;
       grid-template-areas:
         "leftDiv rightDiv";
     }
+    .leftDiv img{
+        width:665px;
+    }
   }
-  @media only screen and (max-width: 376px) {
-      .leftDiv img{
-        width: 280px;
+  /* tablet view */
+  @media only screen and (max-width: 800px) {
+    .grid-component {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
+      .leftDiv img{
+        width:500px;
+    }
   }
+  /* mobile view */
+  @media only screen and (max-width:376px) {
+    .grid-component {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 40px;
+      }
+    .leftDiv img{
+        width:270px;
+    }
+    .rightDiv{
+        text-align: center;
+    }
+    h3{
+        font-size: 24px;
+    }
+    p{
+        font-size: 14px;
+    }
+    ul{
+        display: flex;
+        justify-content: center;
+    }
+  }
+
+
