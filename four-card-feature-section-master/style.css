@@ -1,0 +1,129 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+body{
+    background-color: hsl(0, 0%, 98%);
+    font-family: 'Poppins', sans-serif;
+    font-size:100%;
+}
+.card-feature{
+    margin:auto;
+}
+header{
+    text-align: center;
+    width: 33%;
+    margin:auto;
+}
+.header-light{
+    font-weight: 200;
+    font-size: 28px;
+    color:hsl(234, 12%, 34%);
+    margin-top: 40px;
+}
+.header-bold{
+    font-weight: 600;
+    font-size: 28px;
+    color: hsl(234, 12%, 34%);
+}
+header p{
+    font-weight: 200;
+    font-size: 14px;  
+    color:hsl(229, 6%, 66%);
+    margin-top: 15px;
+}
+main{
+    margin-top: 50px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+main img{
+    float:right;
+    margin-top: 20px;;
+}
+main>div{
+    height: 188px;
+    width: 280px;
+    margin-right: 25px;
+    padding: 20px;
+    box-shadow: 0px 10px 25px -15px hsl(234, 12%, 34%);
+    background-color: white;
+}
+main h4{
+    color:hsl(234, 12%, 34%);
+    font-weight: 600;
+    font-size: 16px;
+}
+main p{
+    font-size:12px;
+    color: hsl(229, 6%, 66%);
+}
+.sub-Divs{
+    height: 430px;
+    border:none;
+    display:flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    box-shadow:none;
+    background-color: transparent;
+}
+.sub-Divs>div{
+    height: 188px;
+    width: 280px;
+    /* margin-top: 10px; */
+    padding: 20px;
+    box-shadow: 0px 10px 25px -15px hsl(234, 12%, 34%);
+    background-color: white;
+}
+
+.Supervisor{
+    border-top: 4px solid hsl(180, 62%, 55%);
+}
+.Team-Builder{
+    border-top: 4px solid hsl(0, 78%, 62%);
+}
+.Karma{
+    border-top: 4px solid hsl(34, 97%, 64%);
+}
+.Calculator{
+    border-top: 4px solid hsl(212, 86%, 64%);
+}
+footer{
+    text-align: center;
+    margin: 20px;
+}
+a{
+    color:hsl(229, 6%, 66%);
+}
+@media (max-width:800px){
+    header{
+        width: 71%;
+    }
+    .header-bold,.header-light{
+        font-size: 21px;
+    }
+    main{
+        flex-flow: column wrap;
+    }
+    .sub-Divs{
+        margin-top: 0px;
+     
+    }
+    .sub-Divs>div{
+        margin-top: 0px;
+        margin-bottom:20px;
+    }
+    main>div{
+        margin-bottom: 20px;
+        margin-right: 0px;
+    }
+}
