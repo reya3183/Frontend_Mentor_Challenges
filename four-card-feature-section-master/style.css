@@ -53,8 +53,9 @@ main>div{
     width: 280px;
     margin-right: 25px;
     padding: 20px;
-    box-shadow: 0px 10px 25px -15px hsl(234, 12%, 34%);
+    box-shadow: 0 10px 30px #83a6d288;
     background-color: white;
+    border-radius: 10px;
 }
 main h4{
     color:hsl(234, 12%, 34%);
@@ -77,10 +78,10 @@ main p{
 .sub-Divs>div{
     height: 188px;
     width: 280px;
-    /* margin-top: 10px; */
     padding: 20px;
-    box-shadow: 0px 10px 25px -15px hsl(234, 12%, 34%);
+    box-shadow: 0 10px 30px #83a6d288;
     background-color: white;
+    border-radius: 10px;
 }
 
 .Supervisor{
