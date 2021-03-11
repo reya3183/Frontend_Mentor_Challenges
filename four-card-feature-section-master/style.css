@@ -13,9 +13,6 @@ body{
     font-family: 'Poppins', sans-serif;
     font-size:100%;
 }
-.card-feature{
-    margin:auto;
-}
 header{
     text-align: center;
     width: 33%;
@@ -37,9 +34,10 @@ header p{
     font-size: 14px;  
     color:hsl(229, 6%, 66%);
     margin-top: 15px;
+    margin-bottom: 50px;
 }
 main{
-    margin-top: 50px;
+    margin: auto;
     overflow: hidden;
     display: flex;
     flex-wrap: nowrap;
