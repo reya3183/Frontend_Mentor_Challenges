@@ -53,7 +53,7 @@ main>div{
     width: 280px;
     margin-right: 25px;
     padding: 20px;
-    box-shadow: 0 10px 30px #83a6d288;
+    box-shadow: 0 10px 20px 0px #83a6d288;
     background-color: white;
     border-radius: 10px;
 }
@@ -79,7 +79,7 @@ main p{
     height: 188px;
     width: 280px;
     padding: 20px;
-    box-shadow: 0 10px 30px #83a6d288;
+    box-shadow: 0 10px 20px 0px #83a6d288;
     background-color: white;
     border-radius: 10px;
 }
@@ -98,7 +98,7 @@ main p{
 }
 footer{
     text-align: center;
-    margin: 20px;
+    margin: 30px;
 }
 a{
     color:hsl(229, 6%, 66%);
