@@ -10,6 +10,7 @@ html{
     font-size: 100%;
 }
 body{
+    max-width: 100%;
     height: 100vh;
     font-family: 'Spartan', sans-serif;
     background-color: hsl(0, 0%, 100%);
@@ -29,7 +30,6 @@ body{
     grid-template-areas: 
     "text-wrapper rate-wrapper"
     "card-wrapper card-wrapper";
-    overflow: hidden;
 }
 .text-wrapper{
     grid-area: text-wrapper;
@@ -39,7 +39,7 @@ body{
     color: hsl(300, 43%, 22%);
     font-weight: 700;
     margin-bottom: .938rem;
-    margin-right: 30px;
+    margin-right: 1.875rem;
 }
 .text-wrapper p{
     color:hsl(300, 2%, 54%);
@@ -108,7 +108,7 @@ body{
     "user-review user-review";
     background-color: hsl(300, 43%, 22%);
     color: hsl(0, 0%, 100%);
-    padding: 30px 25px;
+    padding: 1.875rem 25px;
     border-radius: 0.625rem;
 }
 .user-pic{
@@ -153,7 +153,7 @@ body{
 
 .attribution{
     text-align: center;
-    padding-bottom: 30px;
+    padding-bottom: 1.875rem;
 }
 a{
     color: hsl(300, 2%, 54%);
@@ -168,10 +168,13 @@ a{
     .wrapper{
         display:flex;
         flex-flow: column wrap;
-        gap:40px 0px;
+        gap:2.5rem 0px;
     }
     .text-wrapper{
         text-align: center;
+    }
+    .text-wrapper h1{
+        margin-right: 0px;
     }
     .rate-wrapper{
         display:flex;
@@ -185,7 +188,7 @@ a{
     }
     .rate-wrapper span{
         margin-left: 0px;
-        white-space: pre;
+        display:block;
         line-height: 2;
     }
     .card-wrapper{
@@ -203,7 +206,36 @@ a{
 
 }
 @media only screen and (max-width: 320px){
+    .card-wrapper{
+        gap: 2.5rem 0rem;
+    }
     .rate-wrapper>div {
         padding: 0.650rem 5px; 
+    } 
+    .text-wrapper h1{
+        font-size: 1.9rem;
+    }
+    .text-wrapper p{
+        font-size: .8rem;
+    }
+    .user-info{
+        justify-self: start;
+        margin-left: 40px;
+    }
+    .user-pic {
+        justify-self: start;
+        max-height: 50%;
+    }
+    .user-review{
+        margin-top: 30px;
+    }
+    .user-name{
+        font-size: .8rem;
+    }
+    .user-type{
+        font-size: .8rem;
+    }
+    .attribution {
+        font-size: .8rem;
     }
 }
