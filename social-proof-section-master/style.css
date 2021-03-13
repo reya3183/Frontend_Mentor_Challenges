@@ -158,7 +158,7 @@ body{
 a{
     color: hsl(300, 2%, 54%);
 }
-@media only screen and (max-width: 960px){
+@media only screen and (max-width: 800px){
     body{
         background-image: url(images/bg-pattern-top-mobile.svg),url(images/bg-pattern-bottom-mobile.svg);
         background-position: left top, right top 1200px;
@@ -177,6 +177,7 @@ a{
         display:flex;
         flex-flow: column wrap;
         gap:2rem 0rem;
+        align-items: stretch;
     }
     .rate-wrapper>div{
         text-align:center; 
@@ -193,6 +194,10 @@ a{
         gap: 2rem 0rem;
     }
     .user-info{
+        justify-self: start;
+        margin-left: 20px;
+    }
+    .user-pic{
         justify-self: center;
     }
 
