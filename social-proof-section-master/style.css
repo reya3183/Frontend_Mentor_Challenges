@@ -21,6 +21,7 @@ body{
 .wrapper{
     max-width:80%;
     margin: 50px auto;
+    padding-top: 80px;
     display:grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
@@ -34,10 +35,11 @@ body{
     grid-area: text-wrapper;
 }
 .text-wrapper h1{
-    font-size: 2.6rem;
+    font-size: 2.7rem;
     color: hsl(300, 43%, 22%);
     font-weight: 700;
     margin-bottom: .938rem;
+    margin-right: 30px;
 }
 .text-wrapper p{
     color:hsl(300, 2%, 54%);
@@ -47,29 +49,33 @@ body{
 }
 .review-rate{
     grid-area: review-rate;
+    grid-column: 1/5;
+    
 }
 .report-rate{
     grid-area: report-rate;
+    grid-column: 2/6;
 
 }
 .bestTech-rate{
     grid-area: bestTech-rate;
+    grid-column: 3/7;
 }
 .rate-wrapper{
     grid-area: rate-wrapper;
     display: grid;
-    grid-template-columns: 15px 15px 15px auto;
+    grid-template-columns: 55px 55px 55px 265px 45px;
     grid-template-rows: auto;
     grid-template-areas: 
-    " review-rate review-rate review-rate review-rate"
-    " . report-rate report-rate report-rate"
-    " . . bestTech-rate  bestTech-rate";
+    " review-rate review-rate review-rate review-rate review-rate"
+    " . report-rate report-rate report-rate report-rate"
+    " . . bestTech-rate bestTech-rate bestTech-rate";
     gap: 0.625rem 0px;
     align-items: center;
 }
 .rate-wrapper>div{
     background-color: hsl(300, 24%, 96%);
-    padding: 0.625rem 25px;
+    padding: 0.650rem 25px;
     border-radius: 0.625rem;
 }
 .rate-wrapper span{
@@ -147,7 +153,7 @@ body{
 
 .attribution{
     text-align: center;
-    margin-bottom: 20px;
+    padding-bottom: 30px;
 }
 a{
     color: hsl(300, 2%, 54%);
