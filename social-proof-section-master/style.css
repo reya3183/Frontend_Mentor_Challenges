@@ -202,3 +202,8 @@ a{
     }
 
 }
+@media only screen and (max-width: 320px){
+    .rate-wrapper>div {
+        padding: 0.650rem 5px; 
+    }
+}
