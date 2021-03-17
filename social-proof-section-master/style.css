@@ -17,7 +17,7 @@ body{
     background-image: url(images/bg-pattern-top-desktop.svg),url(images/bg-pattern-bottom-desktop.svg);
     background-position: left 0px top 0px, right 0px top 70px;
     background-size: auto,900px;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
 }
 .wrapper{
     max-width:80%;

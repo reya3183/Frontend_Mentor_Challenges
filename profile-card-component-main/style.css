@@ -1,0 +1,101 @@
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+html{
+    box-sizing: border-box;
+}
+body{
+    max-width: 100%;
+    height: 100vh;
+    background-image: url(images/bg-pattern-top.svg),url(images/bg-pattern-bottom.svg);
+    background-position: left -150px top -200px, right -150px bottom -200px;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-color: hsl(185, 75%, 39%);
+    font-family: 'Kumbh Sans', sans-serif;
+}
+.mainDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    max-width: 100%;
+}
+.profile{
+    height: 22rem;
+    width: 20rem;
+    background-color: white;
+    background-image: url(images/bg-pattern-card.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display:grid;
+    border-radius: 15px;
+    text-align: center;
+}
+.intro{
+    align-self: end;
+    justify-self: center;
+    line-height: 1.5;
+}
+img{
+    height: auto;
+    width: 80%;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+.info{
+    line-height: 1.5;
+    margin-top: 10px;
+}
+.name{
+    color: hsl(229, 23%, 23%);
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+.age{
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+}
+.place{
+    color:hsl(0, 0%, 59%);
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+.stats{
+    border-top: 1.8px solid hsl(0, 0%, 91%);
+    padding-top: 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    align-self: center;
+    line-height: 1.3;
+}
+.stats p{
+    color: hsl(229, 23%, 23%);
+    font-weight: 700;
+}
+.stats span{
+    color: hsl(225, 3%, 76%);
+    font-weight: 400;
+    font-size: 0.75rem;
+    letter-spacing: 3px;
+}
+.attribution{
+    text-align: center;
+}
+a{
+    color: hsl(225, 3%, 76%);
+    text-decoration: none;
+}
+@media only screen and (max-width:640px){
+    .mainDiv{
+        margin: 25px;
+    }
+}
+
