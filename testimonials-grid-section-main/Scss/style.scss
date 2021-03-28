@@ -1,0 +1,98 @@
+@import 'globals';
+
+@import 'variables';
+
+#container {
+  @extend %flex_wrapping;
+  justify-content: center;
+  width: 100%;
+  @media screen and (max-width: 50em) {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+}
+main {
+  @extend %grid_wrapping;
+  width: 100%;
+  padding: 5rem 8rem;
+  overflow: hidden;
+  grid-template-areas:
+    'violetCard violetCard grayishBlue aside'
+    'whiteCard blackishBlue blackishBlue aside';
+  @media screen and (max-width: 50em) {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 2rem 3rem 2rem;
+  }
+}
+.intro {
+  @extend %intro;
+}
+.subTitle {
+  @extend %subtitle;
+}
+.description {
+  @extend %description;
+}
+#card_violet {
+  @extend %card;
+  grid-area: violetCard;
+  background-color: $Moderate_violet;
+  background-image: url(../images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: top right 50px;
+  background-size: 8.125rem;
+  @media screen and (max-width: 23.4375em) {
+    background-position: top right 10px;
+    background-size: 7rem;
+  }
+}
+#card_grayishBlue {
+  @extend %card;
+  background-color: $Very_dark_grayish_blue;
+  grid-area: grayishBlue;
+}
+#card_white {
+  @extend %card;
+  background-color: $White;
+  grid-area: whiteCard;
+  box-shadow: 0 10px 15px -5px $shadow-color;
+  @media screen and (max-width: 50em) {
+    width: 100%;
+  }
+  .intro {
+    h3 {
+      color: $Very_dark_grayish_blue;
+    }
+  }
+  .subTitle {
+    color: $Very_dark_grayish_blue;
+  }
+  .description {
+    color: $Very_dark_grayish_blue;
+  }
+}
+#card_blackishBlue {
+  @extend %card;
+  background-color: $Very_dark_blackish_blue;
+  grid-area: blackishBlue;
+}
+aside {
+  @extend %card;
+  background-color: $White;
+  grid-area: aside;
+  .intro {
+    h3 {
+      color: $Very_dark_grayish_blue;
+    }
+  }
+  .subTitle {
+    color: $Very_dark_grayish_blue;
+  }
+  .description {
+    color: $Very_dark_grayish_blue;
+  }
+}

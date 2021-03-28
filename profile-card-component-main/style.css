@@ -11,13 +11,35 @@ html {
 body {
   max-width: 100%;
   height: 100vh;
-  background-image: url(images/bg-pattern-top.svg),
+  /* background-image: url(images/bg-pattern-top.svg),
     url(images/bg-pattern-bottom.svg);
   background-position: left -150px top -200px, right -150px bottom -200px;
   background-repeat: no-repeat;
-  background-size: 50%;
+  background-size: 50%; */
   background-color: hsl(185, 75%, 39%);
   font-family: 'Kumbh Sans', sans-serif;
+}
+.mainDiv::before {
+  content: '';
+  background: url(images/bg-pattern-top.svg);
+  background-repeat: no-repeat;
+  display: block;
+  position: absolute;
+  transform: translateY(-424px) translateX(-490px);
+  width: 978px;
+  height: 978px;
+  z-index: 1;
+}
+.mainDiv::after {
+  content: '';
+  background: url(images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
+  display: block;
+  position: absolute;
+  transform: translateY(345px) translateX(792px) rotate(360deg);
+  width: 1663px;
+  height: 710px;
+  z-index: 1;
 }
 .mainDiv {
   display: flex;
@@ -25,6 +47,8 @@ body {
   justify-content: center;
   height: 100vh;
   max-width: 100%;
+  position: relative;
+  overflow: hidden;
 }
 .profile {
   height: 22rem;
@@ -37,6 +61,7 @@ body {
   display: grid;
   border-radius: 15px;
   text-align: center;
+  z-index: 3;
 }
 .intro {
   align-self: end;
@@ -95,7 +120,7 @@ a {
   text-decoration: none;
 }
 @media only screen and (max-width: 640px) {
-  .mainDiv {
+  .profile {
     margin: 25px;
   }
 }
