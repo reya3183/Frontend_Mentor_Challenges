@@ -12,7 +12,7 @@
     align-items: center;
   }
 }
-main {
+#main {
   @extend %grid_wrapping;
   width: 100%;
   padding: 5rem 8rem;

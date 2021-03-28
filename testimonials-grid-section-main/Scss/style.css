@@ -37,7 +37,7 @@ body {
           align-items: center;
 }
 
-main {
+#main {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 24% auto 24.5% 22.5%;
@@ -124,7 +124,7 @@ a {
   }
 }
 
-main {
+#main {
   width: 100%;
   padding: 5rem 8rem;
   overflow: hidden;
@@ -132,7 +132,7 @@ main {
 }
 
 @media screen and (max-width: 50em) {
-  main {
+  #main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
