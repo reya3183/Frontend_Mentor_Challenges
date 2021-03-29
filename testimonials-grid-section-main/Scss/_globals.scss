@@ -19,11 +19,6 @@ p {
 body {
   background: $Light_grayish_blue;
   font-family: 'Barlow Semi Condensed', sans-serif;
-  @media screen and (max-width: 800px) {
-    body {
-      background: $Moderate_violet;
-    }
-  }
 }
 
 %flex_wrapping {

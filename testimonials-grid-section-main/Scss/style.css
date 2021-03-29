@@ -22,12 +22,6 @@ body {
   font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
-@media screen and (max-width: 800px) {
-  body body {
-    background: #7541c8;
-  }
-}
-
 .intro, #container {
   display: -webkit-box;
   display: -ms-flexbox;
