@@ -4,12 +4,12 @@
   padding: 0;
   margin: 0;
   -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 html {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 p {
@@ -22,28 +22,33 @@ body {
   font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
-.intro, #container {
+.intro,
+#container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 #main {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 24% auto 24.5% 22.5%;
-      grid-template-columns: 24% auto 24.5% 22.5%;
+  grid-template-columns: 24% auto 24.5% 22.5%;
   -ms-grid-rows: auto auto;
-      grid-template-rows: auto auto;
+  grid-template-rows: auto auto;
   -webkit-column-gap: 2rem;
-          column-gap: 2rem;
+  column-gap: 2rem;
   row-gap: 2rem;
 }
 
-#card_violet, #card_grayishBlue, #card_white, #card_blackishBlue, aside {
+#card_violet,
+#card_grayishBlue,
+#card_white,
+#card_blackishBlue,
+aside {
   border-radius: 10px;
   padding: 1.5rem 2rem;
 }
@@ -57,10 +62,10 @@ body {
 
 .intro {
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-column-gap: 1rem;
-          column-gap: 1rem;
+  column-gap: 1rem;
 }
 
 .intro h3 {
@@ -98,8 +103,8 @@ a {
 
 #container {
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 100%;
 }
 
@@ -110,11 +115,11 @@ a {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
-            flex-flow: column wrap;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 }
 
@@ -122,7 +127,9 @@ a {
   width: 100%;
   padding: 5rem 8rem;
   overflow: hidden;
-      grid-template-areas: 'violetCard violetCard grayishBlue aside' 'whiteCard blackishBlue blackishBlue aside';
+  grid-template-areas:
+    'violetCard violetCard grayishBlue aside'
+    'whiteCard blackishBlue blackishBlue aside';
 }
 
 @media screen and (max-width: 50em) {
@@ -132,14 +139,14 @@ a {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
-            flex-flow: column wrap;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     padding: 5rem 2rem 3rem 2rem;
   }
 }
@@ -147,18 +154,20 @@ a {
 #card_violet {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
+  grid-row: 1;
+  grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: violetCard;
   background-color: #7541c8;
   background-image: url(../images/bg-pattern-quotation.svg);
   background-repeat: no-repeat;
-  background-position: top right 50px;
+  background-position-x: calc(100% - 3rem);
   background-size: 8.125rem;
 }
 
 @media screen and (max-width: 23.4375em) {
   #card_violet {
-    background-position: top right 10px;
+    background-position-x: calc(100% - 1.5rem);
     background-size: 7rem;
   }
 }
@@ -167,6 +176,8 @@ a {
   background-color: #48556a;
   -ms-grid-row: 1;
   -ms-grid-column: 3;
+  grid-row: 1;
+  grid-column: 3;
   grid-area: grayishBlue;
 }
 
@@ -174,9 +185,11 @@ a {
   background-color: white;
   -ms-grid-row: 2;
   -ms-grid-column: 1;
+  grid-row: 2;
+  grid-column: 1;
   grid-area: whiteCard;
   -webkit-box-shadow: 0 10px 15px -5px #d0d6dc;
-          box-shadow: 0 10px 15px -5px #d0d6dc;
+  box-shadow: 0 10px 15px -5px #d0d6dc;
 }
 
 @media screen and (max-width: 50em) {
@@ -201,6 +214,8 @@ a {
   background-color: #19212e;
   -ms-grid-row: 2;
   -ms-grid-column: 2;
+  grid-row: 2;
+  grid-column: 2;
   -ms-grid-column-span: 2;
   grid-area: blackishBlue;
 }
@@ -208,8 +223,10 @@ a {
 aside {
   background-color: white;
   -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
   -ms-grid-column: 4;
+  grid-row: 1;
+  grid-column: 4;
+  -ms-grid-row-span: 2;
   grid-area: aside;
 }
 

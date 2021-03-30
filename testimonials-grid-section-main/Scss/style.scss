@@ -43,10 +43,10 @@
   background-color: $Moderate_violet;
   background-image: url(../images/bg-pattern-quotation.svg);
   background-repeat: no-repeat;
-  background-position: top right 50px;
+  background-position-x: calc(100% - 3rem);
   background-size: 8.125rem;
   @media screen and (max-width: 23.4375em) {
-    background-position: top right 10px;
+    background-position-x: calc(100% - 1.5rem);
     background-size: 7rem;
   }
 }
