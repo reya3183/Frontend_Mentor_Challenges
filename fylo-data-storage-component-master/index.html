@@ -3,17 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
-
     <title>Frontend Mentor | Fylo data storage component</title>
   </head>
+
   <body>
     <section id="container">
       <section id="storage">
@@ -31,12 +35,16 @@
         </div>
       </section>
       <section id="status">
-        <div class="status-left">185 GB Left</div>
-        <div class="status-text">You've used 815 GB of your storage</div>
+        <div class="status-left">
+          <span>1</span><span>8</span><span>5</span><span>GB LEFT</span>
+        </div>
+        <div class="status-text">
+          You've used <span>815 GB</span> of your storage
+        </div>
+        <button class="progress-bar"></button>
         <div class="quantity"><span>0 GB</span><span>1000 GB</span></div>
       </section>
     </section>
-
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
