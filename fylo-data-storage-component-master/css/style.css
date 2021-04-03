@@ -58,7 +58,7 @@ body {
   width: 100%;
 }
 #status {
-  width: 30rem;
+  width: 37rem;
   height: 10rem;
   background-color: var(--Dark-Blue);
   border-radius: 20px;
@@ -69,26 +69,26 @@ body {
   position: relative;
 }
 .status-left {
-  padding: 0.875rem 1.3rem;
+  padding: 0.875rem 1.938rem;
   background-color: white;
   border-radius: 10px 10px 0px 10px;
   align-self: flex-end;
   position: absolute;
-  bottom: 130px;
+  bottom: 8.125rem;
   color: var(--Very-Dark-Blue);
 }
 .status-left::before {
   content: '';
   position: absolute;
-  bottom: -25px;
+  bottom: -1.25rem;
   right: 0;
   width: 0;
   height: 0;
   border-style: solid;
-  border-top: 25px solid white;
+  border-top: 27px solid white;
   border-right: 0 solid transparent;
   border-bottom: 0 solid transparent;
-  border-left: 25px solid transparent;
+  border-left: 27px solid transparent;
 }
 .status-left span {
   font-weight: 700;
@@ -110,49 +110,50 @@ body {
   color: var(--Grayish-Blue);
 }
 .status-text {
-  color: var(--Grayish-Blue);
+  color: var(--Pale-Blue);
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 0.965rem;
   word-spacing: 0.3rem;
 }
 .status-text > span {
   font-weight: 700;
   color: var(--Pale-Blue);
 }
-.progress-bar {
+.progressBar {
+  border: 0;
+  height: 1.25;
   margin: 0.975rem 0rem;
-  border: none;
-  background-image: linear-gradient(
-    to left,
-    hsl(6, 100%, 80%),
-    hsl(335, 100%, 65%)
-  );
-  background-size: 100% 100%;
-  background-position: -120px 0;
-  width: 420px;
-  background-repeat: no-repeat;
   background-color: var(--Very-Dark-Blue);
   border-radius: 25px;
-  animation: progressBar 3s ease-in-out;
-  animation-fill-mode: forwards;
+  width: 33rem;
 }
-@keyframes progressBar {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
-}
-.progress-bar[value] {
+.innerProgress {
+  margin: 4px;
+  background-image: linear-gradient(
+    to left,
+    hsl(335, 100%, 65%),
+    hsl(6, 100%, 80%)
+  );
+  background-size: 100% 100%;
+  width: 25rem;
+  height: 0.813rem;
   border-radius: 25px;
 }
-.progress-bar::after {
+
+.innerProgress::after {
   content: '';
   background-color: white;
   border-radius: 50%;
-  width: 10px;
-  height: 10px;
+  width: 0.688rem;
+  height: 0.688rem;
   position: relative;
   display: inline-block;
+  left: 24.3rem;
+  bottom: 3px;
+}
+.quantity {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  color: var(--Pale-Blue);
 }
