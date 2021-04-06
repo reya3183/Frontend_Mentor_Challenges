@@ -20,20 +20,24 @@ body {
   background-image: url(../assets/images/bg-desktop.png);
   background-repeat: no-repeat;
   background-position-y: bottom;
+  background-size: 100% 50%;
   font-family: 'Raleway', sans-serif;
+  height: 100vh;
+  max-width: 100%;
+  overflow: hidden;
 }
 #container {
   display: flex;
   justify-content: center;
-  max-width: 100%;
-  height: 100vh;
-  padding-top: 12rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
   gap: 5rem;
   align-items: baseline;
+  transform: translateX(-50%) translateY(-50%);
 }
 #storage {
-  width: 21rem;
-  height: 13rem;
+  width: 22rem;
   background-color: var(--Dark-Blue);
   border-top-right-radius: 100px;
   display: flex;
@@ -41,7 +45,7 @@ body {
   flex-flow: column wrap;
   justify-content: center;
   gap: 2.3rem;
-  padding-left: 2rem;
+  padding: 2rem;
 }
 
 .img-container {
@@ -59,7 +63,6 @@ body {
 }
 #status {
   width: 37rem;
-  height: 10rem;
   background-color: var(--Dark-Blue);
   border-radius: 20px;
   display: flex;
@@ -121,7 +124,7 @@ body {
 }
 .progressBar {
   border: 0;
-  height: 1.25;
+  height: 1.25rem;
   margin: 0.975rem 0rem;
   background-color: var(--Very-Dark-Blue);
   border-radius: 25px;
@@ -156,4 +159,114 @@ body {
   justify-content: space-between;
   font-weight: 700;
   color: var(--Pale-Blue);
+}
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+.attribution {
+  color: var(--Grayish-Blue);
+  font-size: 0.875rem;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: var(--Pale-Blue);
+}
+
+@media (max-width: 23.4375em) {
+  body {
+    background-image: url(../assets/images/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  #container {
+    flex-flow: column wrap;
+    gap: 2rem;
+  }
+  #storage {
+    width: 18rem;
+  }
+  #status {
+    width: 19rem;
+  }
+  .status-text {
+    font-size: 0.855rem;
+  }
+  .status-left {
+    bottom: auto;
+    top: 9rem;
+    left: 4rem;
+    align-self: auto;
+    border-radius: 10px;
+  }
+  .status-left::before {
+    content: none;
+  }
+  .progressBar {
+    width: 16rem;
+  }
+  .innerProgress::after {
+    left: 12.3rem;
+  }
+  .innerProgress {
+    width: 13rem;
+  }
+  .attribution {
+    padding-top: 2rem;
+  }
+}
+@media (max-width: 49em) and (min-width: 33.75em) {
+  body {
+    background-size: cover;
+    background-position: center;
+  }
+  #container {
+    flex-flow: column wrap;
+    gap: 0rem;
+  }
+  #storage {
+    width: 15rem;
+    margin: 10px 0px;
+    padding: 1.5rem;
+  }
+  #status {
+    width: 28rem;
+  }
+  .status-text {
+    font-size: 0.875rem;
+  }
+  .status-left {
+    padding: 0.875rem 1.338rem;
+  }
+  .progressBar {
+    width: 24rem;
+  }
+  .innerProgress {
+    width: 20rem;
+  }
+  .innerProgress::after {
+    left: 19.3rem;
+  }
+  .attribution {
+    padding: 2rem 0rem;
+  }
+}
+@media (max-width: 62em) and (min-width: 50em) {
+  body {
+    background-size: cover;
+    background-position: center;
+  }
+  #container {
+    flex-flow: column wrap;
+    gap: 5rem;
+  }
+  #status {
+    width: 35rem;
+  }
+  .progressBar {
+    width: 30rem;
+  }
 }
