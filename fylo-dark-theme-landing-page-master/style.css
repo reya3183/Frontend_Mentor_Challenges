@@ -49,7 +49,7 @@ nav {
   background-image: url(./assets/images/bg-curvy-desktop.svg);
   background-repeat: no-repeat;
   background-position: 0.5rem 4.375rem;
-  background-size: contain;
+  background-size: cover;
 }
 .introduction-text {
   width: 50rem;
@@ -236,6 +236,9 @@ nav {
   outline: none;
   border: none;
 }
+.registration input::placeholder {
+  color: #c3c7cc;
+}
 .registration button {
   padding: 0.875rem 1.5rem;
   border-radius: 25px;
@@ -297,57 +300,101 @@ footer span {
 /* mobile view */
 @media only screen and (max-width: 376px) {
   html {
-    font-size: 50%;
+    font-size: 70%;
   }
   nav {
-    padding: 0.5rem;
+    padding: 2rem;
   }
   nav > ul li {
     margin: 0 0.5rem;
   }
   nav img {
-    width: 3rem;
     height: 3rem;
   }
   .cover-image img {
-    width: 20rem;
+    width: 33rem;
   }
   .intro-container {
-    background-size: contain;
-    /* background-position: 0.5rem 0.1rem; */
-    min-height: 14rem;
+    min-height: 20rem;
+    background-position: center;
+    background-size: 67rem;
   }
   .introduction-text {
-    width: 12rem;
+    width: 29rem;
   }
   .introduction-text h1 {
-    font-size: 1rem;
+    font-size: 2rem;
   }
   .introduction-text p {
-    width: 21rem;
+    width: 25rem;
+    font-size: 1.2rem;
+  }
+  .introduction-text button {
+    padding: 1.5rem 8rem;
   }
   .features {
     display: flex;
     flex-flow: column wrap;
-    margin-top: 15rem;
+    margin-top: 10rem;
   }
   .productive {
     flex-flow: column wrap;
   }
+  .productive-text {
+    width: 25rem;
+  }
   .productive > img {
     width: 20rem;
+  }
+  .productive-link {
+    width: 13.8rem;
   }
   .reviews {
     flex-flow: column wrap;
     align-items: center;
   }
   .registration {
-    width: 25rem;
+    width: 30rem;
+  }
+  .registration h2 {
+    font-size: 2.2rem;
+  }
+  .registration p {
+    font-size: 1.2rem;
   }
   .registration input {
-    width: 21rem;
+    padding: 1.575rem;
+    width: 23rem;
+  }
+  .registration button {
+    padding: 1.575rem 6.5rem;
+    margin-left: 0rem;
+    margin-top: 1.5rem;
+    font-size: 1.142rem;
   }
   footer {
     flex-flow: column wrap;
+    align-items: flex-start;
+    padding-left: 2rem;
+  }
+  footer span {
+    font-size: 1.18rem;
+  }
+  .addressDiv > img {
+    height: 3.5rem;
+    margin-left: 2rem;
+  }
+  .address {
+    margin-bottom: 1rem;
+  }
+  .footerList ul {
+    margin-top: 2rem;
+  }
+  .footerList ul li {
+    font-size: 1.3rem;
+  }
+  .Icons {
+    padding-top: 3rem;
+    margin: 0 auto;
   }
 }
