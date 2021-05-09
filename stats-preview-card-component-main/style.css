@@ -1,0 +1,121 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  height: 100vh;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(233, 47%, 7%);
+}
+@media only screen and (max-width: 56.25em) {
+  body {
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 45em) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+.container {
+  display: flex;
+  background-color: hsl(244, 38%, 16%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+}
+@media only screen and (max-width: 45em) {
+  .container {
+    flex-flow: column wrap;
+    align-items: center;
+  }
+}
+.text-container {
+  width: 45rem;
+  padding: 5rem;
+}
+.text-container h1 {
+  font-size: 3.5rem;
+}
+.text-container > p {
+  font-size: 1.4rem;
+  margin: 2rem 2rem 0rem 0rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+.text-container h1 > span {
+  color: hsl(277, 64%, 61%);
+}
+.stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5rem;
+  margin-right: 5rem;
+}
+.stat {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+}
+.stat-heading {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+.image-container {
+  width: 42rem;
+  height: 34rem;
+  position: relative;
+}
+.image-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0px 10px 10px 0px;
+  object-fit: cover;
+}
+.image-container:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 42rem;
+  height: 34rem;
+  background: hsl(277, 64%, 61%);
+  opacity: 0.495;
+}
+.attribution {
+  text-align: center;
+}
