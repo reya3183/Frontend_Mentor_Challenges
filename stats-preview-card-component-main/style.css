@@ -27,42 +27,86 @@ html {
 
 body {
   box-sizing: border-box;
+}
+/*********************
+    wrapper start 
+********************/
+.wrapper {
   height: 100vh;
   max-width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: hsl(233, 47%, 7%);
-}
-@media only screen and (max-width: 56.25em) {
-  body {
-    padding: 0;
-  }
+  overflow-x: hidden;
 }
 @media only screen and (max-width: 45em) {
-  body {
-    overflow-x: hidden;
+  .wrapper {
+    height: auto;
   }
 }
-
+/*********************
+    container start 
+********************/
 .container {
   display: flex;
   background-color: hsl(244, 38%, 16%);
   color: hsl(0, 0%, 100%);
   border-radius: 10px;
 }
-@media only screen and (max-width: 45em) {
+@media only screen and (max-width: 56.25em) {
   .container {
     flex-flow: column wrap;
     align-items: center;
   }
 }
+@media only screen and (max-width: 45em) {
+  .container {
+    margin: 10rem 0rem;
+  }
+}
+/*********************
+    text-container start 
+********************/
 .text-container {
   width: 45rem;
   padding: 5rem;
 }
+
+@media only screen and (max-width: 56.25em) {
+  .text-container {
+    width: 60rem;
+  }
+}
+@media only screen and (max-width: 45em) {
+  .text-container {
+    width: 38rem;
+  }
+}
+@media only screen and (max-width: 20em) {
+  .text-container {
+    width: 30rem;
+  }
+}
 .text-container h1 {
   font-size: 3.5rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .text-container h1 {
+    font-size: 6rem;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 45em) {
+  .text-container h1 {
+    font-size: 3.5rem;
+  }
+}
+@media only screen and (max-width: 20em) {
+  .text-container h1 {
+    font-size: 3rem;
+  }
 }
 .text-container > p {
   font-size: 1.4rem;
@@ -71,9 +115,31 @@ body {
   font-weight: 400;
   color: hsla(0, 0%, 100%, 0.75);
 }
+@media only screen and (max-width: 56.25em) {
+  .text-container > p {
+    text-align: center;
+    font-size: 3rem;
+    line-height: 2.6rem;
+    margin: 2rem 0rem 0rem 0rem;
+  }
+}
+@media only screen and (max-width: 45em) {
+  .text-container > p {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}
+@media only screen and (max-width: 20em) {
+  .text-container > p {
+    font-size: 1.5rem;
+  }
+}
 .text-container h1 > span {
   color: hsl(277, 64%, 61%);
 }
+/*********************
+    stats start 
+********************/
 .stats {
   display: flex;
   justify-content: space-between;
@@ -81,10 +147,44 @@ body {
   margin-top: 5rem;
   margin-right: 5rem;
 }
+@media only screen and (max-width: 56.25em) {
+  .stats {
+    flex-flow: column wrap;
+    margin-top: 3rem;
+    margin-right: 0rem;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 45em) {
+  .stats {
+    flex-flow: column wrap;
+    margin-top: 3rem;
+    margin-right: 0rem;
+  }
+}
+/*********************
+    stat start 
+********************/
 .stat {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 2rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .stat {
+    font-size: 4rem;
+    padding-top: 3rem;
+  }
+}
+@media only screen and (max-width: 45em) {
+  .stat {
+    font-size: 4rem;
+  }
+}
+@media only screen and (max-width: 20em) {
+  .stat {
+    font-size: 2.5rem;
+  }
 }
 .stat-heading {
   font-family: 'Lexend Deca', sans-serif;
@@ -92,16 +192,53 @@ body {
   font-size: 1.2rem;
   color: hsla(0, 0%, 100%, 0.6);
 }
+@media only screen and (max-width: 56.25em) {
+  .stat-heading {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (max-width: 45em) {
+  .stat-heading {
+    font-size: 1.5rem;
+  }
+}
+/*********************
+    .image-container start 
+********************/
 .image-container {
   width: 42rem;
   height: 34rem;
   position: relative;
 }
+@media only screen and (max-width: 56.26em) {
+  .image-container {
+    width: 60rem;
+    height: 45rem;
+    order: -1;
+  }
+}
+@media only screen and (max-width: 45em) {
+  .image-container {
+    width: 38rem;
+    height: 25rem;
+  }
+}
+@media only screen and (max-width: 20em) {
+  .image-container {
+    width: 30rem;
+    height: 25rem;
+  }
+}
 .image-container img {
   width: 100%;
   height: 100%;
   border-radius: 0px 10px 10px 0px;
-  object-fit: cover;
+}
+
+@media only screen and (max-width: 56.26em) {
+  .image-container img {
+    border-radius: 10px 10px 0px 0px;
+  }
 }
 .image-container:before {
   content: '';
@@ -111,11 +248,27 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  width: 42rem;
-  height: 34rem;
+  width: 100%;
+  height: 100%;
   background: hsl(277, 64%, 61%);
   opacity: 0.495;
+  border-radius: 0px 10px 10px 0px;
+}
+
+@media only screen and (max-width: 56.26em) {
+  .image-container:before {
+    border-radius: 10px 10px 0px 0px;
+  }
+}
+/*********************
+    attribution start 
+********************/
+a {
+  color: hsl(277, 64%, 61%);
+  text-decoration: none;
 }
 .attribution {
   text-align: center;
+  font-size: 1.5rem;
+  color: hsl(244, 38%, 16%);
 }
