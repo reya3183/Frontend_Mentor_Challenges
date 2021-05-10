@@ -209,6 +209,7 @@ body {
   width: 42rem;
   height: 34rem;
   position: relative;
+  background-color: hsl(277, 64%, 61%);
 }
 @media only screen and (max-width: 56.26em) {
   .image-container {
@@ -233,6 +234,8 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 0px 10px 10px 0px;
+  mix-blend-mode: multiply;
+  opacity: 0.8;
 }
 
 @media only screen and (max-width: 56.26em) {
@@ -240,26 +243,7 @@ body {
     border-radius: 10px 10px 0px 0px;
   }
 }
-.image-container:before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background: hsl(277, 64%, 61%);
-  opacity: 0.495;
-  border-radius: 0px 10px 10px 0px;
-}
 
-@media only screen and (max-width: 56.26em) {
-  .image-container:before {
-    border-radius: 10px 10px 0px 0px;
-  }
-}
 /*********************
     attribution start 
 ********************/
