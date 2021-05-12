@@ -8,6 +8,8 @@
 body {
   box-sizing: border-box;
 }
+
+/* cover */
 .cover {
   width: 100%;
   background-image: url(./images/bg-hero-desktop.svg);
@@ -16,6 +18,186 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
 }
-.started-btn {
+@media only screen and (max-width: 45em) {
+  .cover {
+    text-align: center;
+    overflow: hidden;
+  }
+}
+/* logo */
+@media only screen and (max-width: 45em) {
+  .logo {
+    width: 8rem;
+  }
+}
+@media only screen and (max-width: 20em) {
+  .logo {
+    width: 5rem;
+  }
+}
+
+.cover .navbar button {
+  background-color: #ffffff;
+  box-shadow: 0px -1px 3px 3px rgb(224 224 224 / 19%);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+@media only screen and (max-width: 45em) {
+  .cover .navbar button {
+    font-size: 0.875rem;
+  }
+}
+
+.cover h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.3rem;
+}
+@media only screen and (max-width: 45em) {
+  .cover h1 {
+    font-size: 1.8rem;
+  }
+}
+
+.cover p {
+  font-family: 'Open Sans', sans-serif;
+}
+@media only screen and (max-width: 45em) {
+  .cover p {
+    font-size: 1.3rem;
+  }
+}
+
+.btn-pink {
   background-color: hsl(322, 100%, 66%);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+@media only screen and (max-width: 45em) {
+  .btn-pink {
+    font-size: 0.875rem;
+  }
+}
+
+/* cards */
+.cards {
+  margin-top: 10rem;
+}
+.card {
+  border-radius: 10px;
+  box-shadow: 0px -1px 3px 3px rgb(224 224 224 / 19%);
+  border: none;
+}
+.card-title {
+  font-family: 'Poppins', sans-serif;
+}
+.card-text {
+  font-family: 'Open Sans', sans-serif;
+  color: hsl(208, 11%, 55%);
+  font-size: 1.1rem;
+}
+
+/* registration */
+.registration {
+  width: 41rem;
+  padding: 3.5rem;
+  border-radius: 10px;
+  box-shadow: 0px -1px 3px 3px rgb(224 224 224 / 19%);
+  position: relative;
+  top: 6rem;
+  background-color: #ffff;
+}
+@media only screen and (max-width: 45em) {
+  .registration {
+    width: 22rem;
+  }
+}
+@media only screen and (max-width: 20em) {
+  .registration {
+    width: 19.5rem;
+  }
+}
+
+.registration h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+}
+@media only screen and (max-width: 45em) {
+  .registration h3 {
+    font-size: 0.875rem;
+  }
+}
+
+/* footer */
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+footer {
+  background-color: hsl(192, 100%, 9%);
+  padding-top: 10rem;
+  padding-bottom: 3rem;
+}
+.footer-logo {
+  height: 1.5rem;
+}
+footer p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+footer ul > li {
+  list-style: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+@media only screen and (max-width: 45em) {
+  footer ul {
+    padding-left: 0.5rem;
+  }
+}
+/* social-icons  */
+.social-icons ul > li {
+  display: inline-block;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  padding: 5px 10px;
+  margin: 0px 0.5rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .social-icons ul > li {
+    margin: 0px 1px;
+  }
+}
+@media only screen and (max-width: 45em) {
+  .social-icons {
+    text-align: center;
+  }
+}
+.fa-facebook-f {
+  padding: 5px 4px;
+}
+.social-icons ul > li > a:hover {
+  color: hsl(322, 100%, 66%);
+}
+.social-icons ul > li:hover {
+  border: 1px solid hsl(322, 100%, 66%);
+}
+/* attribution */
+.attribution a {
+  color: hsl(192, 100%, 9%);
+}
+/* copyright */
+.copyright {
+  text-align: end;
+}
+@media only screen and (max-width: 45em) {
+  .copyright {
+    text-align: center;
+  }
 }
