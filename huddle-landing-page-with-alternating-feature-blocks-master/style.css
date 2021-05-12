@@ -38,7 +38,7 @@ body {
 
 .cover .navbar button {
   background-color: #ffffff;
-  box-shadow: 0px -1px 3px 3px rgb(224 224 224 / 19%);
+  box-shadow: 0.3rem 0.3rem 0.4rem rgba(0, 0, 0, 0.2);
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
 }
@@ -84,7 +84,7 @@ body {
 }
 .card {
   border-radius: 10px;
-  box-shadow: 0px -1px 3px 3px rgb(224 224 224 / 19%);
+  box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.1);
   border: none;
 }
 .card-title {
@@ -101,7 +101,7 @@ body {
   width: 41rem;
   padding: 3.5rem;
   border-radius: 10px;
-  box-shadow: 0px -1px 3px 3px rgb(224 224 224 / 19%);
+  box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.1);
   position: relative;
   top: 6rem;
   background-color: #ffff;
