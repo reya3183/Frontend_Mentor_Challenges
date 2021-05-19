@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
@@ -26,15 +25,16 @@
     />
     <!-- custom link -->
     <link rel="stylesheet" href="style.css" />
-
+    <!-- title -->
     <title>Frontend Mentor | Clipboard landing page</title>
   </head>
   <body>
+    <!-- wrapper -->
     <div class="wrapper">
       <div class="container text-center">
         <div class="row">
           <div class="mt-5 offset-md-2 col-md-8 offset-md-2">
-            <img class="img-fluid" src="./images/logo.svg" alt="" />
+            <img class="mt-5 img-fluid" src="./images/logo.svg" alt="" />
             <h1 class="mt-5 mb-3">A history of everything you copy</h1>
             <p class="mb-5">
               Clipboard allows you to track and organize everything you copy.
@@ -46,21 +46,24 @@
         </div>
       </div>
     </div>
+    <!-- computer -->
     <div class="container computer">
       <div class="row">
         <div class="offset-md-2 col-md-7 offset-md-3 text-center">
           <h3>Keep track of your snippets</h3>
-          <p>
+          <p class="my-3">
             Clipboard instantly stores any item you copy in the cloud, meaning
             you can access your snippets immediately on all your devices. Our
             Mac and iOS apps will help you organize everything.
           </p>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-7">
+
+      <div class="row my-5">
+        <div class="col-md-7 my-5">
           <img class="img-fluid" src="./images/image-computer.png" alt="" />
         </div>
+
         <div
           class="
             offset-md-1
@@ -69,21 +72,24 @@
             flex-column
             justify-content-center
             align-items-center
+            snippets
           "
         >
           <div>
-            <h6>Quick Search</h6>
+            <h5>Quick Search</h5>
             <p>
               Easily search your snippets by content, category, web address,
               application, and more.
             </p>
           </div>
+
           <div>
-            <h6>iCloud Sync</h6>
+            <h5>iCloud Sync</h5>
             <p>Instantly saves and syncs snippets across all your devices.</p>
           </div>
+
           <div>
-            <h6>Complete History</h6>
+            <h5>Complete History</h5>
             <p>
               Retrieve any snippets from the first moment you started using the
               app.
@@ -92,64 +98,75 @@
         </div>
       </div>
     </div>
-    <div class="container clipboard">
+    <!-- device -->
+    <div class="container device">
       <div class="row">
         <div class="offset-md-3 col-md-6 offset-md-3 text-center">
-          <h4>Access Clipboard anywhere</h4>
-          <p>
+          <h3>Access Clipboard anywhere</h3>
+          <p class="my-3">
             Whether you’re on the go, or at your computer, you can access all
             your Clipboard snippets in a few simple clicks.
           </p>
         </div>
       </div>
-      <div class="row">
-        <div class="offset-md-1 col-md-10 offset-md-1 text-center">
+
+      <div class="row my-5">
+        <div class="my-5 offset-md-1 col-md-10 offset-md-1 text-center">
           <img src="./images/image-devices.png" alt="" class="img-fluid" />
         </div>
       </div>
     </div>
+    <!-- workflow -->
     <div class="container workflow text-center">
       <div class="row">
-        <h4>Supercharge your workflow</h4>
-        <p>We’ve got the tools to boost your productivity.</p>
+        <h3>Supercharge your workflow</h3>
+        <p class="mt-2 mb-5">We’ve got the tools to boost your productivity.</p>
+
         <div class="col-md-4">
           <img src="./images/icon-blacklist.svg" alt="" class="img-fluid" />
-          <h6>Create blacklists</h6>
+          <h5 class="mt-5 mb-3">Create blacklists</h5>
           <p>
             Ensure sensitive information never makes its way to your clipboard
             by excluding certain sources.
           </p>
         </div>
+
         <div class="col-md-4">
           <img src="./images/icon-text.svg" alt="" class="img-fluid" />
-          <h6>Plain text snippets</h6>
+          <h5 class="mt-5 mb-4">Plain text snippets</h5>
           <p>
             Remove unwanted formatting from copied text for a consistent look.
           </p>
         </div>
+
         <div class="col-md-4">
           <img src="./images/icon-preview.svg" alt="" class="img-fluid" />
-          <h6>Sneak preview</h6>
+          <h5 class="mt-5 mb-4">Sneak preview</h5>
           <p>
             Quick preview of all snippets on your Clipboard for easy access.
           </p>
         </div>
       </div>
     </div>
+    <!-- logos -->
     <div class="container logos">
       <div class="row">
         <div class="col">
           <img src="./images/logo-google.png" alt="" class="img-fluid" />
         </div>
+
         <div class="col">
           <img src="./images/logo-ibm.png" alt="" class="img-fluid" />
         </div>
+
         <div class="col">
           <img src="./images/logo-microsoft.png" alt="" class="img-fluid" />
         </div>
+
         <div class="col">
           <img src="./images/logo-hp.png" alt="" class="img-fluid" />
         </div>
+
         <div class="col">
           <img
             src="./images/logo-vector-graphics.png"
@@ -159,40 +176,47 @@
         </div>
       </div>
     </div>
+    <!-- clipboard -->
     <div class="container text-center clipboard">
       <div class="row">
-        <div class="offset-md-3 col-md-6 offset-md-3">
+        <div class="offset-md-2 col-md-8 offset-md-2">
           <h3>Clipboard for iOS and Mac OS</h3>
-          <p>
+          <p class="my-3">
             Available for free on the App Store. Download for Mac or iOS, sync
             with iCloud and you’re ready to start adding to your clipboard.
           </p>
-          <button type="button" class="btn">Download for iOS</button>
-          <button type="button" class="btn">Download for Mac</button>
+          <button type="button" class="btn btn-ios">Download for iOS</button>
+          <button type="button" class="btn btn-mac">Download for Mac</button>
         </div>
       </div>
     </div>
-
+    <!-- footer -->
     <footer>
-      <div class="container">
+      <div class="container py-5">
         <div class="row">
-          <div class="col-md-2">
-            <img src="./images/logo.svg" alt="" class="img-fluid" />
+          <div class="offset-md-1 col-md-1">
+            <img src="./images/logo.svg" alt="" class="img-fluid footer-logo" />
           </div>
+
           <div class="col-md-2">
             <ul>
               <li>FAQs</li>
               <li>Contact Us</li>
             </ul>
           </div>
+
           <div class="col-md-2">
             <ul>
               <li>Privacy Policy</li>
               <li>Press Kit</li>
             </ul>
           </div>
-          <div class="col-md-2">Install Guide</div>
-          <div class="offset-md-1 col-md-3">
+
+          <div class="col-md-2">
+            <p>Install Guide</p>
+          </div>
+
+          <div class="offset-md-1 col-md-3 social-icons">
             <img src="./images/icon-facebook.svg" alt="" class="img-fluid" />
             <img src="./images/icon-twitter.svg" alt="" class="img-fluid" />
             <img src="./images/icon-instagram.svg" alt="" class="img-fluid" />
@@ -205,7 +229,7 @@
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="#">Reya</a>.
     </p>
 
     <script
