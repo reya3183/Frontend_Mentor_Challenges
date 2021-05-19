@@ -1,0 +1,58 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+body {
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+:root {
+  --Strong-Cyan: hsl(171, 66%, 44%);
+  --Light-Blue: hsl(233, 100%, 69%);
+  --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+  --Grayish-Blue: hsl(201, 11%, 66%);
+}
+/* wrapper */
+.wrapper {
+  background-image: url(./images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 8rem;
+}
+.wrapper h1 {
+  font-weight: 600;
+  color: var(--Dark-Grayish-Blue);
+}
+.wrapper p {
+  font-size: 1.2rem;
+  color: var(--Grayish-Blue);
+}
+.btn {
+  border-radius: 50px;
+  color: white;
+  font-weight: 600;
+  padding: 0.875rem 2.3rem;
+  outline: none;
+  margin: 0px 5px;
+}
+.btn-ios {
+  background-color: var(--Strong-Cyan);
+}
+.btn-mac {
+  background-color: var(--Light-Blue);
+}
+/* snippets */
+.computer h3 {
+  font-weight: 600;
+  color: var(--Dark-Grayish-Blue);
+}
+.computer p {
+  font-size: 1.1rem;
+  color: var(--Grayish-Blue);
+}
