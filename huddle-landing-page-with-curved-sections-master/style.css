@@ -1,3 +1,4 @@
+/********** You should use SCSS :( ***********/
 *,
 *::after,
 *::before {
@@ -9,6 +10,23 @@ html {
   box-sizing: border-box;
   font-size: 100%;
 }
+/* heading */
+.grow-together h2,
+.Flowing-Conversations h2,
+.Your-Users h2,
+.register h2,
+footer h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+/*body - paragraph */
+.grow-together p,
+.Flowing-Conversations p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 400;
+}
+
 /* navbar */
 .btn-try {
   border: 1px solid hsl(322, 100%, 66%);
@@ -20,9 +38,20 @@ html {
 .btn-try:hover {
   color: hsl(322, 100%, 66%);
 }
+@media only screen and (max-width: 45em) {
+  nav img {
+    width: 10rem;
+  }
+}
+
 /* Build-Community */
 .Build-Community {
   margin-top: 3rem;
+}
+@media only screen and (max-width: 45em) {
+  .Build-Community {
+    text-align: center;
+  }
 }
 .Build-Community h1 {
   font-family: 'Poppins', sans-serif;
@@ -41,6 +70,7 @@ html {
   padding: 0.675rem 3.5rem;
   border-radius: 25px;
 }
+
 /* status */
 .status p {
   font-family: 'Poppins', sans-serif;
@@ -55,6 +85,7 @@ html {
   font-family: 'Open Sans', sans-serif;
   color: hsl(210, 3%, 55%);
 }
+
 /* grow-together */
 .grow-together::before {
   background-image: url(./images/bg-section-top-desktop-1.svg);
@@ -64,19 +95,29 @@ html {
   height: 10.83vw;
   width: 100%;
   background-size: 100% 10.83vw;
-  /* Shift it up by its height */
   top: -10.83vw;
 }
+@media only screen and (max-width: 45em) {
+  .grow-together::before {
+    background-image: url(./images/bg-section-top-mobile-1.svg);
+    left: -1rem;
+  }
+}
 .grow-together::after {
-  background-image: url(./images/bg-section-top-desktop-2.svg);
+  background-image: url(./images/bg-section-bottom-desktop-1.svg);
   content: '';
   position: absolute;
-  transform: scaleY(-1);
   width: 100%;
   background-size: 100% 9.653vw;
   height: 9.653vw;
   top: 100%;
   z-index: -1;
+}
+@media only screen and (max-width: 45em) {
+  .grow-together::after {
+    background-image: url(./images/bg-section-bottom-mobile-1.svg);
+    left: -1rem;
+  }
 }
 .grow-together {
   margin-top: calc(10.83vw);
@@ -84,79 +125,102 @@ html {
   position: relative;
   background-color: hsl(207, 100%, 98%);
 }
-.grow-together h2,
-.Flowing-Conversations h2,
-.Your-Users h2,
-.register h2,
-footer h3 {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
+@media only screen and (max-width: 45em) {
+  .grow-together {
+    text-align: center;
+  }
 }
-.grow-together p,
-.Flowing-Conversations p {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 0.95rem;
-  font-weight: 400;
+@media only screen and (max-width: 45em) {
+  .grow-together-img {
+    order: -1;
+  }
 }
+
 /* Flowing-Conversations */
 .Flowing-Conversations {
   margin: 15rem auto;
 }
+@media only screen and (max-width: 45em) {
+  .Flowing-Conversations {
+    text-align: center;
+  }
+}
 /* Your-Users */
 .Your-Users::before {
-  background-image: url(./images/bg-section-top-desktop-1.svg);
+  background-image: url(./images/bg-section-top-desktop-2.svg);
   content: '';
   background-repeat: no-repeat;
   position: absolute;
   height: 10.83vw;
   width: 100%;
   background-size: 100% 10.83vw;
-  /* Shift it up by its height */
   top: -10.83vw;
 }
+@media only screen and (max-width: 45em) {
+  .Your-Users::before {
+    background-image: url(./images/bg-section-top-mobile-2.svg);
+    left: -1rem;
+  }
+}
 .Your-Users::after {
-  background-image: url(./images/bg-section-top-desktop-2.svg);
+  background-image: url(./images/bg-section-bottom-desktop-2.svg);
   content: '';
   position: absolute;
-  transform: scaleY(-1);
   width: 100%;
-  background-size: 100% 9.653vw;
-  height: 9.653vw;
+  background-size: 100% 9vw;
+  height: 9vw;
   top: 100%;
   z-index: -1;
+}
+@media only screen and (max-width: 45em) {
+  .Your-Users::after {
+    background-image: url(./images/bg-section-bottom-mobile-2.svg);
+    left: -1rem;
+  }
 }
 .Your-Users {
   position: relative;
   background-color: hsl(207, 100%, 98%);
   margin-top: calc(10.83vw);
-  margin-bottom: calc(10rem + 9.653vw);
+  margin-bottom: calc(10rem + 9vw);
+}
+@media only screen and (max-width: 45em) {
+  .Your-Users {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 45em) {
+  .Your-Users-img {
+    order: -1;
+  }
 }
 .Your-Users p {
   font-family: 'Open Sans', sans-serif;
   font-size: 0.95rem;
   font-weight: 400;
 }
+
 /* register */
 .register {
   margin-top: 18rem;
   margin-bottom: 12rem;
 }
+
 /* footer */
 footer::before {
   content: '';
   background-image: url(./images/bg-footer-top-desktop.svg);
   background-repeat: no-repeat;
   position: absolute;
-  height: 10.973vw;
+  height: 10vw;
   width: 100%;
-  background-size: 100% 10.973vw;
-  /* Shift it up by its height */
-  top: -9.973vw;
+  background-size: 100% 10vw;
+  top: -9vw;
 }
 footer {
   padding-top: 4rem;
   position: relative;
-  margin-top: 10.973vw;
+  margin-top: 10vw;
   width: 100%;
   background-color: hsl(192, 100%, 9%);
   color: white;
@@ -177,6 +241,7 @@ footer .flex-row p {
 footer .flex-row img {
   height: 1rem;
 }
+/* social-icons */
 .social-icons {
   margin-bottom: 5rem;
 }
@@ -189,6 +254,12 @@ footer .flex-row img {
 }
 .social-icons a > i {
   font-size: 1.5rem;
+}
+@media only screen and (max-width: 45em) {
+  .newsletter {
+    order: -1;
+    margin-bottom: 3rem;
+  }
 }
 .newsletter input {
   width: 18rem;
